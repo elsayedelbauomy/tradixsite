@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --maincolor:#2196f3;
+    --secondcolor:#777;
+}
+
+h4 {
+    display: inline-block;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 50px;
+    background-color: var(--maincolor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    
+}
+
+.sidebar .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sidebar .icons i {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    
+}
+
+.sidebar .icons .back {
+    background-color:#0a76cd;
+    padding: 6px;
+}
+
+
+.header {
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header h1 {
+    color: var(--maincolor);
+    font-size: 20px;
+}
+.header .icons1 {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header .icons1 .cont1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    border: 2px solid #eee;
+    width: 220px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.header .icons1 .cont1 .sp1,
+ .header .icons1 .cont1 .sp2 {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.header .icons1 .cont1 .sp1 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #eee;
+}
+
+.header .icons1 .cont1 .sp1 i {
+    margin-left: 5px;
+}
+
+.header .icons1 .cont1 .sp2 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color:var(--secondcolor);
+}
+.header .icons1 .cont2 .one {
+    margin-right: 5px;
+    /* background-color: var(--maincolor); */
+    padding: 10px;
+    display: inline-block;
+    color: var(--maincolor);
+    /* border-radius: 50%; */
+    font-size: 31px;
+}
+
+
+.header .icons1 .cont2 h4 {
+    color: var(--secondcolor);
+    margin-right: 5px;
+}
+
+hr {
+    color: #eee;
+    margin-top: 0;
+}
+
+.user {
+    margin-left: 70px;
+    margin-top: 25px;
+    color: var(--maincolor);
+}
+
+.header .cont2
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.header .cont2 span i {
+    color: var(--secondcolor);
+}
+
+
+.main {
+    margin-left: 70px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr );
+    gap: 10px;
+}
+
+.main .container1
+ {
+    padding: 10px 40px;
+}
+
+.main .container2
+ {
+
+    padding: 10px 0;
+}
+.main .container1 .btn button {
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main .container1 .btn button:first-child {
+    background-color: var(--maincolor);
+    margin-right: 7px;
+    
+}
+
+.main .container1 .btn button:last-child {
+    color: var(--maincolor);
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+.main .container1 p:nth-child(odd) {
+    width: 100%;
+    background-color: #eee;
+    padding: 10px;
+
+}
+
+.main .container1 p:nth-child(odd) span {
+    margin-left: 110px;
+}
+
+.main .container1 p:nth-child(7) span {
+    margin-left: 80px;
+}
+
+.main .container1 p:nth-child(8) span {
+    margin-left: 350px;
+}
+
+.main .container1  p:last-child {
+    margin-top: 20px;
+} 
+
+.main .container1 .bbt {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.imges img {
+    border-radius: 50%;
+    margin-bottom: 35px;
+    width: 50px;
+}
+
+.imges {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -12px;
+}
+
+.imges .img1,
+.imges .img2
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imges  .name div {
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+.imges  .name  a {
+    text-decoration: none;
+    margin-left: -20px;
+    display: block;
+    color: var(--maincolor);
+}
+
+.container2 p {
+    width: 100%;
+    margin-top: 19px;
+    background-color: #eee;
+    padding: 10px;
+}
+/* 
+.container2 p span {
+    margin-left: 25%;
+} */
+
+.second-card {
+    padding: 5px;
+}
+
+.container2 p:nth-child(2) span {
+    margin-left: 25%;
+}
+
+.container2 p:nth-child(3) span {
+    margin-left: 23%;
+}
+
+.container2 p:nth-child(4) span {
+    margin-left: 25%;
+}
+
+.container2 p:nth-child(5) span {
+    margin-left: 40%;
+}
+
+.container2 p:nth-child(6) span {
+    margin-left: 39%;
+}
+
+.container2 p:nth-child(7) span {
+    margin-left: 41%;
+    color: red;
+}
+
+.container2 p:nth-child(8) span {
+    margin-left: 34%;
+}
+
